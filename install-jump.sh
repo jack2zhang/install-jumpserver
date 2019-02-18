@@ -30,8 +30,7 @@ sed -i "s/BOOTSTRAP_TOKEN:/BOOTSTRAP_TOKEN: $BOOTSTRAP_TOKEN/g" /opt/jumpserver/
 sed -i "s/# DEBUG: true/DEBUG: false/g" /opt/jumpserver/config.yml
 sed -i "s/# LOG_LEVEL: DEBUG/LOG_LEVEL: ERROR/g" /opt/jumpserver/config.yml
 sed -i "s/# SESSION_EXPIRE_AT_BROWSER_CLOSE: False/SESSION_EXPIRE_AT_BROWSER_CLOSE: True/g" /opt/jumpserver/config.yml
-sed -i "s/DB_PASSWORD = .*/DB_PASSWORD = 'jumpserver'/" config.yml
-
+sed -i "s/DB_PASSWORD:.*/DB_PASSWORD: jumpserver/" config.yml
 ## coco
 cd $CPWD/jumpserver-package/
 tar zxvf coco-1.4.7.tar.gz -C /opt/
