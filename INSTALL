@@ -1,0 +1,12 @@
+yum.sh
+install mysql
+set mysql
+install redis
+install python
+install jumpserver
+    env
+    jumpserver
+    coco
+    luna
+install nginx
+
