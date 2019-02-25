@@ -26,4 +26,7 @@ cat INSTALL
 
 实际建议结合资产管理使用或者独立2次开发
 
+### 补充
+
+run.sh之气重新登录下ssh shell
 
